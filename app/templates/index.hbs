@@ -1,0 +1,80 @@
+<div class="jumbo">
+    <img class="right" src="http://emberjs.com/images/blog/2016-02/lts-tomster.png" alt="Tomster">
+    <h2>Welcome!</h2>
+    <p>
+        We hope you find exactly what you're looking for in a place to stay.
+        <br>Browse our listings, or use the search box above to narrow your search.
+    </p>
+    {{#link-to 'about' class="button"}}
+        About Us
+    {{/link-to}}
+</div>
+
+{{#each model as |rentalUnit|}}
+  {{rental-listing rental=rentalUnit}}
+{{/each}}
+
+
+<!--<article class="listing">-->
+
+    <!--<a class="" href="#">-->
+        <!--<img src="https://upload.wikimedia.org/wikipedia/commons/c/cb/Crane_estate_(5).jpg" alt="">-->
+        <!--<small>View Larger</small>-->
+    <!--</a>-->
+    <!--<div class="map" style="background: url(https://maps.googleapis.com/maps/api/staticmap?center=43.559308,-0.473013&amp;zoom=6&amp;size=150x150&amp;markers=color:red%7C43.559308,-0.473013) center center;"></div>-->
+    <!--<h3>Grand Old Mansion</h3>-->
+    <!--<div class="detail">-->
+        <!--<span>Owner:</span> Veruca Salt-->
+    <!--</div>-->
+    <!--<div class="detail">-->
+        <!--<span>Type:</span> Standalone - Estate-->
+    <!--</div>-->
+    <!--<div class="detail">-->
+        <!--<span>Location:</span> San Francisco-->
+    <!--</div>-->
+    <!--<div class="detail">-->
+        <!--<span>Number of bedrooms:</span> 15-->
+    <!--</div>-->
+<!--</article>-->
+
+<!--<article class="listing">-->
+
+    <!--<a href="#">-->
+        <!--<img class="" src="https://upload.wikimedia.org/wikipedia/commons/0/0e/Alfonso_13_Highrise_Tegucigalpa.jpg" alt="">-->
+        <!--<small>View Larger</small>-->
+    <!--</a>-->
+    <!--<div class="map" style="background: url(https://maps.googleapis.com/maps/api/staticmap?center=45.0748542,5.8452524&amp;zoom=6&size=150x150&amp;markers=color:red%7C45.0748542,5.8452524) center center;"></div>-->
+    <!--<h3>Urban Living</h3>-->
+    <!--<div class="detail">-->
+        <!--<span>Owner:</span> Veruca Salt-->
+    <!--</div>-->
+    <!--<div class="detail">-->
+        <!--<span>Type:</span> Standalone - Estate-->
+    <!--</div>-->
+    <!--<div class="detail">-->
+        <!--<span>Location:</span> San Francisco-->
+    <!--</div>-->
+    <!--<div class="detail">-->
+        <!--<span>Number of bedrooms:</span> 15-->
+    <!--</div>-->
+<!--</article>-->
+
+<!--<article class="listing">-->
+    <!--<a href="#"><img class="" src="https://upload.wikimedia.org/wikipedia/commons/f/f7/Wheeldon_Apartment_Building_-_Portland_Oregon.jpg" alt="">-->
+        <!--<small>View Larger</small>-->
+    <!--</a>-->
+    <!--<div class="map" style="background: url(https://maps.googleapis.com/maps/api/staticmap?center=42.284477,9.205893&amp;zoom=6&size=150x150&amp;markers=color:red%7C42.284477,9.205893) center center;"></div>-->
+    <!--<h3>Downtown Charm</h3>-->
+    <!--<div class="detail">-->
+        <!--<span>Owner:</span> Veruca Salt-->
+    <!--</div>-->
+    <!--<div class="detail">-->
+        <!--<span>Type:</span> Standalone - Estate-->
+    <!--</div>-->
+    <!--<div class="detail">-->
+        <!--<span>Location:</span> San Francisco-->
+    <!--</div>-->
+    <!--<div class="detail">-->
+        <!--<span>Number of bedrooms:</span> 15-->
+    <!--</div>-->
+<!--</article>-->

@@ -1,0 +1,25 @@
+<div class="container" {{action 'hideAutocomplete'}}>
+    <div class="menu">
+        {{#link-to 'index'}}
+            <h1 class="left">
+                <img src="http://emberjs.com/images/ember-logo.svg" alt="Ember Logo">
+                <em>rentals</em>
+            </h1>
+        {{/link-to}}
+        <div class="left links">
+            {{#link-to 'about'}}
+                About
+            {{/link-to}}
+            {{#link-to 'contact'}}
+                Contact
+            {{/link-to}}
+        </div>
+        <div class="right relative">
+          {{filter-listing filteredList=filteredList
+          autoComplete=(action 'autoComplete') search=(action 'search')}}
+        </div>
+    </div>
+    <div class="body">
+        {{outlet}}
+    </div>
+</div>

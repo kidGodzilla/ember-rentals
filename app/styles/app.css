@@ -1,0 +1,12 @@
+.listing a, .pointer {
+  cursor: pointer;
+}
+.up-11 {
+  margin-top: -11px;
+}
+.map {
+  height: 120px;
+  width: 120px;
+  background-size: cover;
+  border-radius: 5px;
+}
